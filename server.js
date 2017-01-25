@@ -2,6 +2,7 @@
 
 const Hapi = require('hapi')
 var _ = require('lodash')
+require('locus');
 
 var server = new Hapi.Server()
 server.connection({
