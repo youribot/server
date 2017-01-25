@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/youribot/server/issues"
   },
-  "homepage": "https://github.com/youribot/server#readme"
+  "homepage": "https://github.com/youribot/server#readme",
+  "dependencies": {
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0"
+  }
 }
