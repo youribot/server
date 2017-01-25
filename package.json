@@ -18,6 +18,7 @@
   "homepage": "https://github.com/youribot/server#readme",
   "dependencies": {
     "hapi": "^16.1.0",
+    "hapi-routes": "^2.2.3",
     "inert": "^4.1.0"
   }
 }
