@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard",
     "setup": "[ -d uploads ] || mkdir uploads"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "locus": "^1.2.0"
+    "locus": "^1.2.0",
+    "standard": "*"
   }
 }

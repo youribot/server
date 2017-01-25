@@ -1,5 +1,4 @@
 'use strict'
-
 const Hapi = require('hapi')
 var _ = require('lodash')
 require('locus')
@@ -18,6 +17,9 @@ server.register({
   register: require('hapi-routes'),
   options: {dir: 'routes'}
 }, function (err) {
+  if (err) {
+    throw err
+  }
   server.start((err) => {
     if (err) {
       throw err
