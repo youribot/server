@@ -1,8 +1,9 @@
 'use strict'
 
 const Hapi = require('hapi')
-var server = new Hapi.Server()
+var _ = require('lodash')
 
+var server = new Hapi.Server()
 server.connection({
   host: 'localhost',
   port: 8000
