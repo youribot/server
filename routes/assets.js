@@ -1,17 +1,24 @@
 var fs = require('fs')
+var ipfsh = require('../ipfshelper')
 
 var routes = [
+  {
+    method: 'GET',
+    path: '/asset',
+    handler: function (request, reply) {
+      var ipfsReply = ipfsh.pinToIpfs('uploads/Screen Shot 2017-01-10 at 9.24.12 AM.png')
+      reply(JSON.stringify(ipfsReply))
+    }
+  },
   {
     method: 'POST',
     path: '/asset/upload',
     config: {
-
       payload: {
         output: 'stream',
         parse: true,
         allow: 'multipart/form-data'
       },
-
       handler: function (request, reply) {
         console.log('here')
         var data = request.payload
